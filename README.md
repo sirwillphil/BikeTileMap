@@ -4,7 +4,7 @@ The area of focus for my tile map is Seattle,Washington. I focused on making a m
 Link to Map: [link](https://sirwillphil.github.io/BikeTileMap/)  
 Data Source: [Seattle GeoData](https://data-seattlecitygis.opendata.arcgis.com/maps/bf36bd11b499489d8cc1d491b72eb712/about)  
 
-Screenshots
+Screenshots:
 ![Base Tile](img/base-tile.png)
 ![Bike Tile](img/bike-tile.png)
 ![Bike and Base Tile](img/baseandbike-tile.png)
