@@ -65,6 +65,19 @@
         #menu a.active:hover {
             background: #3074a4;
         }
+
+        #map-title {
+            position: absolute;
+            top: 10px;
+            left: 50%;
+            transform: translateX(-50%);
+            z-index: 1;
+            background: rgba(255, 255, 255, 0.8);
+            padding: 5px 10px;
+            font-family: 'Open Sans', sans-serif;
+            font-size: 30px;
+            border-radius: 3px;
+        }
     </style>
     <script src="https://api.mapbox.com/mapbox-gl-js/v2.8.1/mapbox-gl.js"></script>
 </head>
@@ -72,6 +85,7 @@
 <body>
     <nav id="menu"></nav>
     <div id='map'></div>
+    <div id="map-title">Bike Tile Map</div>
     <script type="text/javascript">
         mapboxgl.accessToken =
             'pk.eyJ1Ijoid2lsbHNlbmVua28iLCJhIjoiY21oNm9tenlzMGxmNzJpb211eWN4OWhzMiJ9.CNtId7OzmVwm4EajEwdCGg';
@@ -81,6 +95,8 @@
             zoom: 10.5, // starting zoom
             center: [-122.31, 47.6002614] // starting center
         });
+
+         map.addControl(new mapboxgl.ScaleControl({unit: 'imperial'}));
 
         map.on('load', () => {
 
